@@ -4,13 +4,13 @@ type InitialStateProps = {
   value: number
 }
 
-const initialState: InitialStateProps = {
+export const initialStateSample: InitialStateProps = {
   value: 0,
 }
 
 const sampleSlice = createSlice({
   name: 'sample',
-  initialState,
+  initialState: initialStateSample,
   reducers: {
     increment: state => {
       state.value += 1

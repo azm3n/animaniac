@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div style={{display: 'flex', flexDirection: 'row', gap: '16px'}}>
       <button onClick={() => decrement()}>Odejmij</button>
-      <span>{sampleValue}</span>
+      <span data-testid='sampleValue'>{sampleValue}</span>
       <button onClick={() => increment()}>Dodaj</button>
     </div>
   )
