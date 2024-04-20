@@ -24,7 +24,7 @@ const App = () => {
   return (
     <AppWrapper>
       <Navbar />
-      {/* <div style={{display: 'flex', flexDirection: 'row', gap: '16px'}}>
+      <div style={{display: 'flex', flexDirection: 'row', gap: '16px'}}>
         <button onClick={() => decrement()} data-testid='decrement_button'>
           {t('BUTTON.DECREMENT')}
         </button>
@@ -38,7 +38,7 @@ const App = () => {
         data-testid='change_language_button'
       >
         {t('BUTTON.CHANGE_LANGUAGE')}
-      </button> */}
+      </button>
     </AppWrapper>
   )
 }

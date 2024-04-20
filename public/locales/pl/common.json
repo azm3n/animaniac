@@ -2,6 +2,16 @@
   "BUTTON": {
     "DECREMENT": "Odejmij",
     "INCREMENT": "Dodaj",
-    "CHANGE_LANGUAGE": "Zmień język"
+    "CHANGE_LANGUAGE": "Zmień język",
+    "NAVBAR": {
+      "SIGN_OUT": "Wyloguj się",
+      "SIGN_IN": "Zaloguj się",
+      "LOGO_ALT": "Chłopiec ze słomianym kapeluszem",
+      "NAVIGATION": {
+        "HOME": "Anime",
+        "CHAT": "Czat",
+        "COMMENTS": "Komentarze"
+      }
+    }
   }
 }

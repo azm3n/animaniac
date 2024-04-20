@@ -8,6 +8,7 @@ i18next
   .use(LanguageDetector)
   .use(Backend)
   .init({
+    debug: true,
     fallbackLng: 'pl',
     lng: 'pl',
     defaultNS: 'common',
