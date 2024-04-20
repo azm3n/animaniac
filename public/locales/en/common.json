@@ -1,0 +1,7 @@
+{
+  "BUTTON": {
+    "DECREMENT": "Decrement",
+    "INCREMENT": "Increment",
+    "CHANGE_LANGUAGE": "Change language"
+  }
+}

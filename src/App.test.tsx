@@ -6,7 +6,6 @@ import {setupUniqueStore} from './test.utils/store'
 
 const renderUniqueStoreProvider = () => {
   const store = setupUniqueStore()
-
   render(
     <Provider store={store}>
       <App />
@@ -24,7 +23,7 @@ describe('Testing increment and decrement buttons', () => {
 
     expect(sampleValueElement.textContent).toBe('0')
 
-    const incrementButton = screen.getByText('Dodaj')
+    const incrementButton = screen.getByTestId('increment_button')
     fireEvent.click(incrementButton)
 
     expect(sampleValueElement.textContent).toBe('1')
@@ -36,7 +35,7 @@ describe('Testing increment and decrement buttons', () => {
 
     expect(sampleValueElement.textContent).toBe('0')
 
-    const decrementButton = screen.getByText('Odejmij')
+    const decrementButton = screen.getByTestId('decrement_button')
     fireEvent.click(decrementButton)
 
     expect(sampleValueElement.textContent).toBe('-1')
