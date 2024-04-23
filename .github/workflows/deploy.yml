@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  build:
-    name: Build
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -32,12 +32,6 @@ jobs:
       - name: Build
         run: pnpm build
 
-  deploy:
-    name: Deploy GH Pages
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
