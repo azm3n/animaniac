@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
-    "animaniac": "link:",
     "i18next": "^23.11.2",
     "i18next-browser-languagedetector": "^7.2.1",
     "i18next-http-backend": "^2.5.1",
