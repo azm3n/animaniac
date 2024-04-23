@@ -36,13 +36,10 @@ jobs:
         run: pnpm build
 
       - name: Deploy with gh-pages
-        env:
-          MY_EMAIL: klaudiusz.mateusz.dabrowski@gmail.com
-          MY_NAME: Azm3n
         run: |
-          git config --global user.email $MY_EMAIL
-          git config --global user.name $MY_NAME
-          git remote set-url origin https://$MY_NAME:${{ secrets.GH-PAGES-TOKEN }}@github.com/$MY_NAME/Animaniac.git
+          git config --global user.email klaudiusz.mateusz.dabrowski@gmail.com
+          git config --global user.name Azm3n
+          git remote set-url origin https://Azm3n:${{ secrets.GH-PAGES-TOKEN }}@github.com/Azm3n/Animaniac.git
           pnpm run deploy -- -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
