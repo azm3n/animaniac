@@ -8,6 +8,9 @@ dependencies:
   '@reduxjs/toolkit':
     specifier: ^2.2.3
     version: 2.2.3(react-redux@9.1.1)(react@18.2.0)
+  animaniac:
+    specifier: 'link:'
+    version: 'link:'
   i18next:
     specifier: ^23.11.2
     version: 23.11.2
