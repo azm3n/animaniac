@@ -37,5 +37,5 @@ jobs:
 
       - name: Deploy with gh-pages
         run: |
-          git remote set-url origin git:${{ secrets.GITHUB_TOKEN }}@github.com:Azm3n/Animaniac.git
+          git remote set-url origin git@github.com:Azm3n/Animaniac.git
           npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
