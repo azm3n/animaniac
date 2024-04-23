@@ -34,6 +34,8 @@ jobs:
 
       - name: Deploy with gh-pages
         run: |
+          git config --global user.email "klaudiusz.mateusz.dabrowski@gmail.com"
+          git config --global user.name "azm3n"
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           pnpm run deploy -- -u "github-actions-bot <support+actions@github.com>"
         env:
