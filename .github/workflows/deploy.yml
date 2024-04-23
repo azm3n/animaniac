@@ -13,16 +13,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: PNPM Setup
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 8.14.0
-
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
           node-version: 21
-          cache: 'pnpm'
+
+      - name: PNPM Setup
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 8.14.0
 
       - name: Install dependencies
         run: pnpm install
@@ -33,18 +32,15 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3
-        with:
-          name: production-files
-          path: ./dist
-
   deploy:
-    name: Deploy
+    name: Deploy GH Pages
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
 
     steps:
-      - name: GH-Pages
-        run: pnpm run deploy
+      - name: Deploy with gh-pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          pnpm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
