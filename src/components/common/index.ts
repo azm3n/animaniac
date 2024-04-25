@@ -1,2 +1,6 @@
 export {default as Logo} from './Logo'
+export {default as StoreTest} from './StoreTest'
+export {default as RootText} from './RootText'
+export {default as FlexRow} from './FlexRow'
+export {default as Button} from './Button'
 export {default as AppWrapper} from './AppWrapper'

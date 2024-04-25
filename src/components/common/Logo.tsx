@@ -10,7 +10,7 @@ const StyledImg = styled.img`
 const Logo: FC = () => {
   const {t} = useTranslation()
 
-  return <StyledImg src={logo} alt={t('BUTTON.NAVBAR.LOGO_ALT')} />
+  return <StyledImg src={logo} alt={t('NAVBAR.LOGO_ALT')} />
 }
 
 export default Logo

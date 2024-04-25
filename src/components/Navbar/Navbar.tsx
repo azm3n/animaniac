@@ -8,10 +8,9 @@ const StyledNavbar = styled.div`
   display: flex;
   flex-direction: row;
   gap: 8px;
-  min-width: 100vw;
   max-height: 60px;
   padding: 8px 16px;
-  background-color: red;
+  background-color: #d9b99b;
   align-items: center;
   justify-content: space-between;
 `

@@ -1,14 +1,14 @@
 import {screen, fireEvent, cleanup, render} from '@testing-library/react'
 import {Provider} from 'react-redux'
 import {afterEach, describe, expect, it} from 'vitest'
-import App from './App'
-import {setupUniqueStore} from './test.utils/store'
+import {setupUniqueStore} from '../../test.utils/store'
+import {StoreTest} from '.'
 
 const renderUniqueStoreProvider = () => {
   const store = setupUniqueStore()
   render(
     <Provider store={store}>
-      <App />
+      <StoreTest />
     </Provider>,
   )
 }

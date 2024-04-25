@@ -1,13 +1,12 @@
-import {useSelector} from 'react-redux'
-import {sampleActions} from './store/slices/sample'
-import {selectSampleValue} from './store/selectors/sample'
-import useDispatchedActions from './store/useDispatchedActions'
+import {FC} from 'react'
 import {useTranslation} from 'react-i18next'
+import {useSelector} from 'react-redux'
+import {selectSampleValue} from '../../store/selectors/sample'
+import useDispatchedActions from '../../store/useDispatchedActions'
+import {sampleActions} from '../../store/slices/sample'
 import {changeLanguage} from 'i18next'
-import {AppWrapper} from './components/common'
-import {Navbar} from './components/Navbar'
 
-const App = () => {
+const StoreTest: FC = () => {
   const {t} = useTranslation()
   const sampleValue = useSelector(selectSampleValue)
   const {increment, decrement} = useDispatchedActions({
@@ -22,25 +21,24 @@ const App = () => {
   }
 
   return (
-    <AppWrapper>
-      <Navbar />
+    <>
       <div style={{display: 'flex', flexDirection: 'row', gap: '16px'}}>
         <button onClick={() => decrement()} data-testid='decrement_button'>
-          {t('BUTTON.DECREMENT')}
+          {t('DECREMENT')}
         </button>
         <span data-testid='sampleValue'>{sampleValue}</span>
         <button onClick={() => increment()} data-testid='increment_button'>
-          {t('BUTTON.INCREMENT')}
+          {t('INCREMENT')}
         </button>
       </div>
       <button
         onClick={handleChangeLanguage}
         data-testid='change_language_button'
       >
-        {t('BUTTON.CHANGE_LANGUAGE')}
+        {t('CHANGE_LANGUAGE')}
       </button>
-    </AppWrapper>
+    </>
   )
 }
 
-export default App
+export default StoreTest
