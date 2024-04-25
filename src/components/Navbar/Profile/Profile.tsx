@@ -1,17 +1,11 @@
 import {FC} from 'react'
 import {useTranslation} from 'react-i18next'
-import {styled} from 'styled-components'
+import {Button} from '../../common'
 
-const StyledSignOutButton = styled.button`
-  padding: 4px 6px;
-  background-color: green;
-`
-
-const SignOutButton: FC = () => {
+const Profile: FC = () => {
   const {t} = useTranslation()
-  return <StyledSignOutButton>{t('BUTTON.NAVBAR.SIGN_IN')}</StyledSignOutButton>
-}
 
-const Profile: FC = () => <SignOutButton />
+  return <Button>{t('NAVBAR.SIGN_IN')}</Button>
+}
 
 export default Profile

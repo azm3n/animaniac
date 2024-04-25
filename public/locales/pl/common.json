@@ -1,17 +1,23 @@
 {
-  "BUTTON": {
-    "DECREMENT": "Odejmij",
-    "INCREMENT": "Dodaj",
-    "CHANGE_LANGUAGE": "Zmień język",
-    "NAVBAR": {
-      "SIGN_OUT": "Wyloguj się",
-      "SIGN_IN": "Zaloguj się",
-      "LOGO_ALT": "Chłopiec ze słomianym kapeluszem",
-      "NAVIGATION": {
-        "HOME": "Anime",
-        "CHAT": "Czat",
-        "COMMENTS": "Komentarze"
-      }
+  "DECREMENT": "Odejmij",
+  "INCREMENT": "Dodaj",
+  "CHANGE_LANGUAGE": "Zmień język",
+  "NAVBAR": {
+    "SIGN_OUT": "Wyloguj się",
+    "SIGN_IN": "Zaloguj się",
+    "LOGO_ALT": "Chłopiec ze słomianym kapeluszem",
+    "NAVIGATION": {
+      "HOME": "Anime",
+      "CHAT": "Czat",
+      "COMMENTS": "Komentarze"
     }
+  },
+  "FOOTER": {
+    "PRIVACY_POLICY": "Polityka prywatności",
+    "STATUTE": "Regulamin"
+  },
+  "ERROR_PAGE": {
+    "MESSAGE": "Strona, której szukasz, nie istnieje.",
+    "REDIRECT": "Wróć na stronę główną"
   }
 }

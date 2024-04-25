@@ -1,23 +1,19 @@
 import {FC, ReactNode} from 'react'
 import styled from 'styled-components'
 
-const StyledAppWrapper = styled.div`
+const AppWrapperStyled = styled.div`
   display: flex;
+  gap: 0;
   flex-direction: column;
-  padding: 0;
-  margin: 0;
-  min-height: 100vh;
-  min-width: 100vw;
-  justify-content: flex-start;
-  align-items: center;
+  height: 100%;
 `
 
 type Props = {
   children: ReactNode
 }
 
-const AppWrapper: FC<Props> = ({children}) => (
-  <StyledAppWrapper>{children}</StyledAppWrapper>
-)
+const AppWrapper: FC<Props> = ({children}) => {
+  return <AppWrapperStyled>{children}</AppWrapperStyled>
+}
 
 export default AppWrapper
