@@ -1,17 +1,23 @@
 {
-  "BUTTON": {
-    "DECREMENT": "Decrement",
-    "INCREMENT": "Increment",
-    "CHANGE_LANGUAGE": "Change language",
-    "NAVBAR": {
-      "SIGN_OUT": "Sign out",
-      "SIGN_IN": "Sign in",
-      "LOGO_ALT": "Boy with a straw hat",
-      "NAVIGATION": {
-        "HOME": "Home",
-        "CHAT": "Chat",
-        "COMMENTS": "Comments"
-      }
+  "DECREMENT": "Decrement",
+  "INCREMENT": "Increment",
+  "CHANGE_LANGUAGE": "Change language",
+  "NAVBAR": {
+    "SIGN_OUT": "Sign out",
+    "SIGN_IN": "Sign in",
+    "LOGO_ALT": "Boy with a straw hat",
+    "NAVIGATION": {
+      "HOME": "Home",
+      "CHAT": "Chat",
+      "COMMENTS": "Comments"
     }
+  },
+  "FOOTER": {
+    "PRIVACY_POLICY": "Privacy policy",
+    "STATUTE": "Statute"
+  },
+  "ERROR_PAGE": {
+    "MESSAGE": "Page was not found",
+    "REDIRECT": "Back to home"
   }
 }
