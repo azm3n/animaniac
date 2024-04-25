@@ -6,14 +6,13 @@ import Root from './Root.tsx'
 import {I18nextProvider} from 'react-i18next'
 import i18next from './utils/translations.ts'
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
-import {ErrorPage, HomePage} from './pages/index.tsx'
+import {ErrorPage} from './pages/index.tsx'
 
 const router = createBrowserRouter([
   {
     path: '/animaniac/',
     element: <Root />,
     errorElement: <ErrorPage />,
-    children: [{path: 'home', element: <HomePage />}],
   },
 ])
 

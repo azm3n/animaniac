@@ -14,7 +14,7 @@ i18next
     defaultNS: 'common',
     ns: ['common'],
     backend: {
-      loadPath: '/animaniac/home/locales/{{lng}}/{{ns}}.json',
+      loadPath: '/animaniac/locales/{{lng}}/{{ns}}.json',
     },
     react: {
       useSuspense: true,
