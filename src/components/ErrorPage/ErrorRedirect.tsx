@@ -8,7 +8,7 @@ type Props = {
 
 const ErrorRedirect: FC<Props> = ({children}) => {
   return (
-    <Link to='/animaniac/home'>
+    <Link to='/animaniac/'>
       <Button>{children}</Button>
     </Link>
   )

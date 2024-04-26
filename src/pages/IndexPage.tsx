@@ -1,7 +1,7 @@
 import {FC} from 'react'
 import styled from 'styled-components'
 
-const HomePageStyled = styled.div`
+const IndexPageStyled = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #faf0e6;
@@ -11,8 +11,8 @@ const HomePageStyled = styled.div`
   align-items: center;
 `
 
-const HomePage: FC = () => {
-  return <HomePageStyled>HomePage</HomePageStyled>
+const IndexPage: FC = () => {
+  return <IndexPageStyled>IndexPage</IndexPageStyled>
 }
 
-export default HomePage
+export default IndexPage

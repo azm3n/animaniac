@@ -1,4 +1,4 @@
-import {FC} from 'react'
+import {ButtonHTMLAttributes, FC} from 'react'
 import styled from 'styled-components'
 
 const ButtonStyled = styled.button`
@@ -10,12 +10,12 @@ const ButtonStyled = styled.button`
   cursor: pointer;
 `
 
-type Props = {
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: string
 }
 
-const Button: FC<Props> = ({children}) => {
-  return <ButtonStyled>{children}</ButtonStyled>
+const Button: FC<Props> = ({children, ...props}) => {
+  return <ButtonStyled {...props}>{children}</ButtonStyled>
 }
 
 export default Button
